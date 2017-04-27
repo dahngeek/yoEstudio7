@@ -1,7 +1,7 @@
 <?php return [
-  'name' => 'Your site',
+  'name' => 'YoEstudio7',
   'nav' => [
-    'News,align-left' => '/admin/articles',
+    'Articulos,align-left' => '/admin/articles',
 
     // Decoy defaults
     'Elements,leaf' => '/admin/elements',

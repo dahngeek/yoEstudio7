@@ -6,7 +6,7 @@ use Bkwld\Decoy\Controllers\Base;
 
 class Articles extends Base
 {
-    protected $title = 'News';
+    protected $title = 'Articulos';
     protected $description = 'Articles that appear in the News section.';
     protected $columns = [
         'Title' => 'getAdminTitleHtmlAttribute',
