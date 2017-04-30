@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing', ['title'=> "YoEstudio7"]);
 });
 Route::get('news/{slug}', ['as' => 'article', function($slug) {
   return view('news.show', ['article' => Article::findBySlugOrFail($slug) ]);
