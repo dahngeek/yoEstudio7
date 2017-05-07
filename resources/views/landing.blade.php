@@ -12,7 +12,7 @@
   <div class="ui container">
     <div class="header item">
         <!--<img src="/assets/images/logo-black.png" class="ui logobar" alt="YoEstudio7 logo">-->
-        <a href=""><h1 class="logo-header">YoEstudio7</h1></a>
+        <a href="{{$appUrl}}"><h1 class="logo-header">YoEstudio7</h1></a>
     </div>
     <!--<a class="active item">Inicio</a>
     <a class="item">Work</a>
@@ -29,7 +29,7 @@
         <i class="instagram large icon"></i>
       </div>
       <div id="barButton" class="item" style="display:none;">
-        <a class="ui green button" href="/estudiar">Probar</a>
+        <a class="ui green button" href="/bienvenido">Probar</a>
       </div>
     </div>
   </div>
@@ -46,7 +46,7 @@
         <div class="sixteen wide column">
           <img src="/assets/images/logo.png" class="ui image mobile only grid centered" alt="YoEstudio7 logo">
           <h1 class="ui header">
-            <div class="ui medium header">Tu estudio diario.</div>
+            <div class="ui medium header animated zoomInDown">Tu estudio diario.</div>
           </h1>
         </div>
         <!--<div class="row centered">
@@ -61,7 +61,7 @@
             <a class="ui huge facebook button" href="/estudiar">Crea tu perfil <i class="right facebook square icon"></i> </a>
           </div>
           <div class="row aligned">
-            <a class="ui huge green button" href="/estudiar">Pruébalo <i class="right arrow icon"></i> </a>
+            <a class="ui huge green button" href="/bienvenido">Pruébalo <i class="right arrow icon"></i> </a>
           </div>
         </div>
       </div>
@@ -79,40 +79,52 @@
               Explora
             </div>
           </h1>
-          <p >La biblia de una manera práctica y diferente. echa un vistazo todos los días, siempre hay algo nuevo que aprender.</p>
-        </div>
-        <div class="six wide left floated column">
-          <img src="assets/images/firm.jpg" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="eight wide column">
+          <p >La Biblia de una manera práctica y diferente.</p>
           <h1 class="ui header">
             <div class="ui medium header">
               <!--<i class="marker icon"></i> -->
               Descubre
             </div>
           </h1>
-          <p>Lo que la biblia quiere decirnos en cada parte.</p>
-        </div>
-        <div class="six wide left floated column">
-          <img src="assets/images/firm.jpg" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="eight wide column">
+          <p>Cada día hay algo nuevo que aprender.</p>
           <h1 class="ui header">
             <div class="ui medium header">
               <!--<i class="announcement icon"></i>-->
               Comparte
             </div>
           </h1>
+          <p>El cambio comienza por vos, hay alguien más que lo está necesitando.</p>
+        </div>
+        <div class="six wide left floated column">
+          <img src="assets/images/dio_explora.png" class="ui large image">
+        </div>
+      </div>
+      <!--<div class="row">
+        <div class="eight wide column">
+          <h1 class="ui header">
+            <div class="ui medium header">
+              Descubre
+            </div>
+          </h1>
+          <p>Lo que la biblia quiere decirnos en cada parte.</p>
+        </div>
+        <div class="six wide left floated column">
+          <img src="/assets/images/lupa.png" class="ui small rounded image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="eight wide column">
+          <h1 class="ui header">
+            <div class="ui medium header">
+              Comparte
+            </div>
+          </h1>
           <p>Si te gustó, no lo dudes y compartilo! Por vos comienza el cambio.</p>
         </div>
         <div class="six wide left floated column">
-          <img src="assets/images/firm.jpg" class="ui large bordered rounded image">
+          <img src="assets/images/dio_share.png" class="ui large bordered rounded image">
         </div>
-      </div>
+      </div>-->
     </div>
     <a class="ye7scroll" href="#se-parte"><i class="ye7 arrow green tobotom centered"></i></a>
   </div>
@@ -126,12 +138,12 @@
               </div>
               <p>Queremos que tu experiencia con Dios sea la mejor, y por eso intentamos mejorar tu experiencia cada día.</p>
               <p></p>
-              <p>Pero necesitamos que nos ayudes diciendo que no te gusta y que quisieras encontrar en este espacio en donde solo vos y Dios.</p>
+              <p>Pero necesitamos que nos ayudes diciendo que no te gusta y que quisieras encontrar en este espacio en donde solo sos vos y Dios.</p>
               <p></p>
               <a class="ui huge green button" href="/sugerencias"> Tengo una idea <i class="right idea icon"></i> </a>
           </div>
           <div class="six wide right floated column">
-            <img src="assets/images/firm.jpg" class="ui large bordered rounded image">
+            <img src="assets/images/separte.png" class="ui medium image">
           </div>
         </div>
       </div>
@@ -173,15 +185,15 @@
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
         <div class="three wide column">
-          <h4 class="ui inverted header">Acerca de</h4>
+          <h4 class="ui inverted header">Links útiles</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Mapa del sitio</a>
+            <a href="#" class="item">Estudiar</a>
             <a href="#" class="item">Contacto</a>
           </div>
         </div>
         <div class="ten wide column">
           <h4 class="ui inverted header">El procedimiento...</h4>
-          <p>Esta es una forma de estudiar tu biblia, obtener resultados y guía a lo largo de tu estudio.</p>
+          <p>Esta es una forma de estudiar tu Biblia, obtener resultados y guía a lo largo de tu estudio.</p>
         </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Acerca de</h4>
@@ -195,4 +207,12 @@
   </div>
 </div>
 
+<!--<div class="overlay " style="    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: #fff;">
+  <div class="ui active centered inline loader"></div>
+</div>-->
 @stop

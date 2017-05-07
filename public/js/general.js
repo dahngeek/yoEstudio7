@@ -6,9 +6,22 @@ $(document)
             $root.animate({
                 scrollTop: $(href).offset().top
             }, 500, function () {
-                window.location.hash = href;
+                // window.location.hash = href;
             });
             return false;
         });
+        $('.ye7destaca').hover(function(){
+            console.log("hover");
+            var elemento = $(this).data('element')
+            console.log($(elemento));
+            $(elemento).css({'animation':'rubberBand 1s'});
+        },function(){
+            console.log("hover out");
+            var elemento = $(this).data('element')
+            console.log($(elemento));
+            $(elemento).css({'animation':''});
+        });
+
+        console.log($('.ui.embed').embed());
 
 });

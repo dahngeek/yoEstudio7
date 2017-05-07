@@ -12,8 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('landing', ['title'=> "YoEstudio7"]);
+    return view('landing', ['appUrl'=>URL::to('/'),'title'=> "YoEstudio7"]);
 });
+
+Route::get('/bienvenido', function () {
+    return view('welcome', ['appUrl'=>URL::to('/'),'title'=> "YoEstudio7: Bienvenido"]);
+});
+
+Route::get('/estudiar/intro', function () {
+    return view('estudiar.intro', ['appUrl'=>URL::to('/'),'title'=> "YoEstudio7: Video Intro"]);
+});
+
 Route::get('news/{slug}', ['as' => 'article', function($slug) {
   return view('news.show', ['article' => Article::findBySlugOrFail($slug) ]);
 }]);
