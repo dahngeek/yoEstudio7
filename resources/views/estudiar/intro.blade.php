@@ -46,11 +46,17 @@
                             <div class="play_muted ui button black fluid huge play"><i id="mobile_control" class="play icon"></i> <span>Play Muted</span></div>
                         </div>
                     </div>
+                    <div class="mobile only centered ui row stackable relaxed">
+                        <br>
+                        <div class="ui row centered">
+                            <a href="/estudiar/hoy" class="ui button blue fluid huge">Continuar <i class="right arrow icon"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="ui two column centered grid">
+                <div class="ui two column centered grid mobile hidden">
                     <div class="four column row">
                         <div class="column right floated">
-                            <a href="/estudiar/hoy" class="ui green bottom attached button right floated">Continuar <i class="ui right arrow icon"></i></a>
+                            <a href="/estudiar/hoy" class="ui blue bottom attached button right floated">Continuar <i class="ui right arrow icon"></i></a>
                         </div>
                     </div>
                 </div>

@@ -23,6 +23,10 @@ Route::get('/estudiar/intro', function () {
     return view('estudiar.intro', ['appUrl'=>URL::to('/'),'title'=> "YoEstudio7: Video Intro"]);
 });
 
+Route::get('/estudiar/hoy', function () {
+    return view('estudiar.main', ['appUrl'=>URL::to('/'),'title'=> "YoEstudio7: [Dia de la semana]"]);
+});
+
 Route::get('news/{slug}', ['as' => 'article', function($slug) {
   return view('news.show', ['article' => Article::findBySlugOrFail($slug) ]);
 }]);
