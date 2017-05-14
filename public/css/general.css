@@ -154,6 +154,9 @@ a,a:hover {
     height: 300px;
 }
 
+#player {
+  display: none;
+}
 
 .embed-container {
     position: relative;
