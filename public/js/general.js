@@ -1,3 +1,4 @@
+var bannerVisible = false;
 $(document)
     .ready(function() {
         var $root = $('html, body');
@@ -22,6 +23,34 @@ $(document)
             $(elemento).css({'animation':''});
         });
 
-        console.log($('.ui.embed').embed());
+        // dashboard en welcome
+        $('#pantallaBienvenida').visibility({
+            onUpdate: function(calculations){
+                console.log(calculations);
+                if(!calculations.offScreen&& calculations.percentagePassed<1){
+                    console.log("se fixea");
+                    bannerVisible=false;
+                    $('#pantallaBienvenida').css({'margin-bottom':$("#fixedContent").height()});
+                    $('#fixedContent').css({'position':'fixed'});
+                    $("#scrollWelcome").show();
+                }
+                else if(calculations.offScreen){
+                    console.log("se statiquea");
+                    bannerVisible=true;
+                    $('#pantallaBienvenida').css({'margin-bottom':'auto'});
+                    $('#fixedContent').css({'position':'static'});
+                    $("#scrollWelcome").hide();
+                }
+            }
+        });
+        $("#playdashVideo").click(function(){
+            $('.ui.modal')
+                .modal({
+                    blurring: true
+                })
+                .modal('show')
+                ;
+        });
+        console.log("pizza");
 
 });

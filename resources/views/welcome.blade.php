@@ -32,28 +32,54 @@
     </div>
     <div class="ui row">
         <div class="ui two column centered grid">
-          <div class="four column centered row">
-            <div class="column">
-                <div class="ui saltar pequenia right floated image" id="videoButton">
-                  <a href="/estudiar/intro">
-                    <img src="/assets/images/icons/play.png">
-                    <p>Ver Intro</p>
-                  </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui saltar pequenia image">
-                  <a href="/estudiar/hoy">
-                    <img src="/assets/images/icons/lapiz.png">
-                    <p>Comenzar</p>
-                  </a>
-                </div>
+          <div class="one column centered row">
+            <div class="center aligned column">
+              <br>
+                <a class="ui big green button ye7scroll" href="#dashboard">Comenzar <i class="right arrow icon"></i></a>
             </div>
           </div>
         </div>
     </div>
   </div>
   <div class="imagebg animated slideInUp"></div>
+  <a class="ye7scroll" id="scrollWelcome" href="#dashboard"><i class="ye7 arrow white tobotom right"></i></a>
 </div>
-
+<div id="dashboard"></div>
+<div id="fixedContent" class="pusher">
+  <div class="ui grid">
+    <div class="ui sixteen column colorizedBg">
+      <div id="weeklyVideo" style="background-image:url(/assets/imsge.jpg);">
+        <div class="ui circular huge green icon button" id="playdashVideo"><i class="ui icon play"></i></div>
+      </div>
+    </div>
+  </div>
+    <div class="ui container">
+        <div class="ui grid three column stackable">
+            <div class="ui sixteen wide column">
+              <div class="ui stacked segment">
+                hola
+              </div>
+            </div>
+            <div class="ui five wide column">
+              <div class="ui stacked segment">
+                <p>Hola</p>
+              </div>
+            </div>
+            <div class="ui five wide column">
+              <div class="ui stacked segment">
+                hola
+              </div>
+            </div>
+            <div class="ui five wide column"></div>
+        </div>
+    </div>
+</div>
+<div class="ui modal">
+  <div class="header">Video introducción</div>
+  <div class="content">
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</div>
 @stop

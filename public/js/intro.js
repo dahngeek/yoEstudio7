@@ -25,6 +25,7 @@ $(document)
       $('.video_overlay_controls').hide();
       $('.play_muted').hide();
       $('#player').show();
+      
       player.mute();
       playFullscreen();
     });
@@ -62,9 +63,15 @@ function playFullscreen (){
     requestFullScreen.bind(iframe)();
   }
 }
-
+function onApiChange(){
+    player.getOptions('cc');
+    console.log("asd");
+    console.log(player.getOptions());
+}
 // when video ends
 function onPlayerStateChange(event) {  
+    player.getOptions('cc');
+    console.log("mutedmuted");
     if(event.data === 0) {
         var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
         (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
